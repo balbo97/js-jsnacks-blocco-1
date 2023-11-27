@@ -11,8 +11,17 @@ for (let i=0; i<array_length; i++){
  array.push(num)
 }
 
-// CREO UN' ALRA ARRAY CONTENENTE GLI ULTIMI 5 NUMERI DELLA ARRAY PRECEDENTE 
-let last_5 = array.slice(5,10);
+if (array_length >= 5){
 
-// STAMPO IN CONSOLE LA NUAVA ARRAY 
-console.log(last_5)
+    // INVERTO L'ARRAY 
+    array.reverse()
+    
+    // CREO UN' ALRA ARRAY CONTENENTE GLI ULTIMI 5 NUMERI DELLA ARRAY PRECEDENTE 
+    let last_5 = array.slice(0,5);
+    
+    // STAMPO IN CONSOLE LA NUAVA ARRAY 
+    console.log(last_5)
+}
+else{
+    console.log(array)
+}
